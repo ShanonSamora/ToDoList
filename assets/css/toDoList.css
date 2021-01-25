@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    background-color: rgb(26, 44, 102);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    font-weight: 300;
+    color: white;
+    transition: 0.2s;
+    list-style-type: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 35px;
+    margin-left: 20px;
+    margin-bottom: 25px;
+    width: 80%;
+}
+
+
+ul li:hover {
+    color: rgb(195, 194, 194);
+}
+
+ul li:hover .remove {
+    opacity: 100;
+}
+
+ul li.checked {
+    text-decoration: line-through;
+    color: gray;
+    transition: all 0.2s;
+}
+
+.remove {
+    font-size: 45px;
+    color:rgb(255, 66, 66);
+    background-color: rgba(255,255,255,0);
+    border: none;
+    transition: all 0.2s;
+    outline: none;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.hideMe {
+    opacity: 0;
+    transition: all 0.2s;
+}
+
+.showMe {
+    opacity: 100;
+    transition: all 0.2s;
+}
+
+#addButton {
+    font-size: 50px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 900;
+    transition: all 0.3s;
+    color: rgb(255, 115, 0);
+    background-color: rgb(225, 236, 255);
+    border-radius: 50%;
+    margin-top: 30px;
+    margin-right: 35px;
+    padding: 2px 18px 5px 18px;
+    user-select: none;
+    float: right;
+}
+
+#addButton:hover {
+    background-color: rgba(225, 236, 255, 0.705);
+    color: rgba(255, 115, 0, 0.678);
+}
+
+#box {
+    min-width: 10em;
+    max-width: 75em;
+    height: auto;
+    margin: auto;
+    border-radius: 25px;
+    background-color: rgba(70, 96, 180, 0.877);
+    flex-grow: .67;
+    object-position: center;
+    padding-bottom: 1em;
+}
+
+#items {
+    margin-top: 1em;
+    margin-left: 1em;
+}
+
+#newTask {
+    color: rgb(255, 115, 0);
+    font-size: 30px;
+    width: 100%;
+    height: 3em;
+    background-color: rgb(225, 236, 255);
+    outline: none;
+    border: none;
+    border-radius: 0;
+    text-align: center;
+}
+
+#title {
+    color: rgb(255, 115, 0);
+    font-weight: bold;
+    font-size: 50px;
+    margin-left: 35px;
+    display: inline-block;
+}

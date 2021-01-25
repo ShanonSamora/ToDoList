@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap" rel="stylesheet"> 
+    <!--Css file-->
+    <link href="css/toDoList.css" rel="stylesheet" type="text/css">
+    <title>To Do List</title>
+</head>
+<body>
+    <div id="box">
+        <div id="header">
+            <h1 id="title">To Do List</h1>
+            <span onclick="newElement()" id="addButton">+</span>
+            <input type="text" id="newTask" class="hideMe" class="showMe" placeholder="New task...">
+        </div>
+        <div id="tasks">
+            <ul id="items">
+                <li class="checked">Go to the gym</li>
+                <li>Keep studying web development</li>
+                <li>Get that first job!</li>
+            </ul>
+        </div>
+    </div>
+    <script src="js/toDoList.js"></script>
+</body>
+</html>
